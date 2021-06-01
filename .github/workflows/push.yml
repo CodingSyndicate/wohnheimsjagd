@@ -1,0 +1,34 @@
+name: Build and Push
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Use Node.js latest
+        uses: actions/setup-node@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: push to webserver
+        uses: isthatcentered/dist-to-ftp@v1
+        with:
+          # Ftp user
+          user: ${{ secrets.FTP_USER }}
+          # Ftp password
+          password: ${{ secrets.FTP_PASSWORD }}
+          ## FTP host url
+          host: ${{ secrets.FTP_HOST }}
+          ## Path to your build folder (usually ./dist or ./public)
+          path: ./build
+          # Where to place the files in your ftp
+          into: .
+          # Remove existing file inside FTP destination folder
+          cleanupExisting: true

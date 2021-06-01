@@ -49,8 +49,8 @@ export const data = [
     {
         name: "Feldweg",
         hint: [
-            "Folge dem Weg nach Links. (In Richtung Garching/Tum) Lese dir vorher die nächste Frage durch!",
-            "Follow the path to the left. (In the direction to Garching/Tum) Read the next Question first!"
+            "Folge dem Weg nach Links. (In Richtung TUM) Lies dir vorher die nächste Frage durch!",
+            "Follow the path to the left. (In the direction to TUM) Read the next Question first!"
         ],
         question: [
             "Klein Pingu versucht sich nach den Hausaufgaben noch ein kleines Taschengeld zu verdienen. Dazu kann er dem Bauern bei einer Kleinigkeit helfen. Nachdem du ja dein Schnitzel gerne hättest musst du für klein Pingu die Pfähle mit roten spitzen zählen und ihm mitteilen, dass er es dem Bauern weiterleiten kann.",
