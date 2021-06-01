@@ -1,0 +1,28 @@
+@import '@fontsource/ribeye';
+:root {
+    font-family: system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+    --font-mono: 'Fira Mono', monospace;
+    --primary-color: #008fce;
+    --secondary-color: #0f3963;
+    --headline-color: #868686;
+    --text-color: #FFFFFF;
+    --background-color: #F8F8F8;
+    --surface-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Ribeye;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/snow-covered-land.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}

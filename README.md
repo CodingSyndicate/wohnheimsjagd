@@ -1,2 +1,1 @@
-# wohnheimsjagd
-Jagd auf die Wohnheimsmenschen!
+# Wohnheimsjagd
