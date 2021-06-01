@@ -8,9 +8,6 @@
 	{#each [...Array(count).keys()] as i}
 		<div
 			class="diashowIndicatorBubble"
-			on:click={() => {
-				selected = i;
-			}}
 		>
 			<DiashowIndicatorBubble selected={i === selected} />
 		</div>
