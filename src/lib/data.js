@@ -3,7 +3,7 @@ export const data = [
         name: "Scheune",
         hint: [
             "Dem Wege entlang zu deiner Linken befindet sich eine Scheune mit einem gelben Verbotsschild.",
-            "Follow the path to a barn on your left."
+            "Follow the path to a barn on your left. On the barn is a yellow proscription sign."
         ],
         question: [
             "Klein Pingu kann noch nicht so gut Deutsch sprechen. Du musst ihm helfen folgenden Lücken Text auszufüllen. ________ abladen verboten",
@@ -32,11 +32,11 @@ export const data = [
     {
         name: "Gewächshaus",
         hint: [
-            "Am Baum vorbei und weiter dem wege entlang folge dem Blick Jesus bis zum Pferdeverbotsschild.",
+            "Am Baum vorbei und weiter dem Wege entlang folge dem Blick Jesus bis zum Pferdeverbotsschild.",
             "Pass the tree and go forward, follow Jesus eyes until you reach the Horses prohibited sign."
         ],
         question: [
-            "Pingu soll für Era-Pinguin Obst und Gemüse mitbringen als dankeschön für die Hilfe in Mathe. Klein Pingu überlegt wo diese Dinge überhaupt herkommen. Zu deiner rechten befindet sich ein Gebäude wo man soetwas wachsen lassen könnte. Ein _______haus",
+            "Pingu soll für Era-Pinguin Obst und Gemüse mitbringen als dankeschön für die Hilfe in Mathe. Klein Pingu überlegt wo Obst und Gemüse überhaupt herkommt. Zu deiner rechten befindet sich ein Gebäude wo man soetwas wachsen lassen könnte. Ein _______haus",
             "Era-Pinguin asked as exchange for the help in the math homework if Pingu could bring him some fruit and vegetables. Pingu doesn`t know where theses thing can be grown. To your right is building that could answer that question for Pingu. A _____house. "
         ],
         answers: [
@@ -57,18 +57,20 @@ export const data = [
             "Pingu wants to earn some pocket money after all this homework. A farmer could use the help of Pingu. Afterall you want your Schnitzel? So go and count the piers with the red top on the right and tell it Pingu."
         ],
         answers: [
-            "6"
+            "6",
+            "six",
+            "sechs"
         ]
     },
     {
         name: "Planetenschild",
         hint: [
-            "Dem Weg immer weiter geradeaus Folgen (rechts halten) kommt ihr an eine Holzbrücke wo ein Infoschild zu einem Planeten steht",
+            "Dem Weg immer weiter geradeaus Folgen kommt ihr an eine Holzbrücke wo ein Infoschild zu einem Planeten steht",
             "Follow the path to the left and count the pillars on the way"
         ],
         question: [
-            "Pingu ist sehr interessiert am Universum. Damit er für euch bei den Pinguinen bürgt und ihr freies geleit zu eurem Schnitzel bekommen wollt müsst ihr Pingu sagen um welchen Planeten es sich handelt damit er weis ob es sich lohnt die Woche mal zu diesem Schild zu watscheln.",
-            "Pingu always wants to learn new things about our Universum. If you want your Schnitzel you have to go to the wooden Bridge and tell Pingu what Planet is talked about on the sign so Pingu knows if it is worth to waddle there the next days."
+            "Pingu ist sehr interessiert am Universum. Damit er für euch bei den Pinguinen bürgt und ihr freies geleit zu eurem Schnitzel bekommen wollt müsst ihr Pingu sagen um welchen Planeten es sich handelt, damit er weis ob es sich lohnt die Woche mal zu diesem Schild zu watscheln.",
+            "Pingu always wants to learn new things about our Univers. If you want your Schnitzel you have to go to the wooden bridge and tell Pingu what planet is talked about on the sign, so Pingu knows if it is worth to waddle there the next days."
         ],
         answers: [
             "saturn"
@@ -77,8 +79,8 @@ export const data = [
     {
         name: "Spielfeld",
         hint: [
-            "Zuletzt folgst du dem Wege weiter bis zu einem Boulebahnen. Dort findest du den nächsten Hinweis zu deinem Schnitzel. Die Pinguine werden euch passieren lassen.",
-            "Follow the path to the left and count the pillars on the way to get your Schnitzel. The Penguin won`t harm you on your journey"
+            "Zuletzt folgst du dem Wege weiter (Richtung Tum Campus - Nicht zum Spielplatz oder Garching abbiegen) bis zu den Boulebahnen. Dort findest du den nächsten Hinweis zu deinem Schnitzel. Die Pinguine werden euch passieren lassen.",
+            "Follow the path to the Tum Campus (Don't use the path to Garching) until you get to the Boulebahnen. The Penguin won`t harm you on your journey"
         ]
     }
 ]

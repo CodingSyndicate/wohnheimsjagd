@@ -21,7 +21,15 @@
 </script>
 
 <div class="indexContainer">
-	<h1 class="title">Schnitzeljagd</h1>
+	<div class="titleRow">
+		<div class="corner"></div>
+		<h1 class="title">Schnitzeljagd</h1>
+		<div class="languageSelection corner">
+			<img class="language" src="/deutschland flagge.jpg" alt="" on:click={() => {languageCode = 0;}}>
+			<img class="language" src="britanien.png" alt="" on:click={() => {languageCode = 1;}}>
+		</div>
+	</div>
+	
 	<p class="info">
 		VORSICHT! Ihr begebt euch auf gefährliches Teritorium! Die Wege vor euch werden von der
 		Pinguinguerillia kontrolliert!
@@ -30,7 +38,6 @@
 		Um die Pinguine friedlich zu gesinnen, müsst ihr nun klein Pingu bei seinen Hausaufgaben helfen,
 		damit er für euch bei den Kaiserpinguinen bürgt.
 	</p>
-
 	<h3 class="pinguTitle">Pingus Hausaufgaben:</h3>
 	{#each [data[currentStation]] as station (currentStation)}
 		<p class="stationHint">{station.hint[languageCode]}</p>
@@ -53,6 +60,30 @@
 		align-items: center;
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+
+	.titleRow {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.language {
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;
+		width: 30px;
+		height: 25px;
+	}
+
+	.title {
+		width: 60%;
+		text-align: center;
+	}
+
+	.corner {
+		width: 20%;
 	}
 
 	.stationHint {
