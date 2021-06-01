@@ -25,8 +25,8 @@
 		<div class="corner"></div>
 		<h1 class="title">Schnitzeljagd</h1>
 		<div class="languageSelection corner">
-			<img class="language" src="/deutschland flagge.jpg" alt="" on:click={() => {languageCode = 0;}}>
-			<img class="language" src="britanien.png" alt="" on:click={() => {languageCode = 1;}}>
+			<img class="language" src="/deutschland.jpg" alt="" on:click={() => {languageCode = 0;}}>
+			<img class="language" src="/britanien.png" alt="" on:click={() => {languageCode = 1;}}>
 		</div>
 	</div>
 	
