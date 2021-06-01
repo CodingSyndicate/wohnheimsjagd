@@ -8,6 +8,7 @@
 
 	let currentStation = 0;
 	let languageCode = 0;
+	let invalid = false;
 
 	function checkAnswer(answers, answer) {
 		if (answers.includes(answer)) {
@@ -15,6 +16,7 @@
 			currentStation++;
 			currentAnswer = '';
 		} else {
+			invalid = true;
 			console.log('Wrong!');
 		}
 	}
@@ -43,7 +45,7 @@
 		<p class="stationHint">{station.hint[languageCode]}</p>
 		{#if station.question}
 			<p class="stationQuestion">{station.question[languageCode]}</p>
-			<TextField bind:value={currentAnswer} />
+			<TextField bind:value={currentAnswer} bind:invalid/>
 			<Button on:click={checkAnswer(station.answers, currentAnswer.toLowerCase())} />
 		{:else}
 			Pinguine können nicht fliegen. Dafür sind sie sehr gute Schwimmer und Taucher.
