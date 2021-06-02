@@ -11,9 +11,7 @@
 	let invalid = false;
 
 	function checkAnswer(answers, answer) {
-		gtag('event', 'answer', {
-			event_category: data[currentStation].name,
-			event_label: data[currentStation].name,
+		gtag('event', data[currentStation].name, {
 			value: answer
 		});
 
