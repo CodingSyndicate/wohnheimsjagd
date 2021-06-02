@@ -11,6 +11,14 @@
 	let invalid = false;
 
 	function checkAnswer(answers, answer) {
+		console.log(typeof gtag);
+
+		gtag('event', 'answer', {
+			event_category: data[currentStation].name,
+			event_label: data[currentStation].name,
+			value: answer
+		});
+
 		if (answers.includes(answer)) {
 			console.log('Yeah');
 			currentStation++;
