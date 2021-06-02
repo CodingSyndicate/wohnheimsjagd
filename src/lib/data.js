@@ -79,7 +79,7 @@ export const data = [
     {
         name: "Spielfeld",
         hint: [
-            "Zuletzt folgst du dem Wege weiter (Richtung Tum Campus - Nicht zum Spielplatz oder Garching abbiegen) bis zu den Boulebahnen. Dort findest du den nächsten Hinweis zu deinem Schnitzel. Die Pinguine werden euch passieren lassen.",
+            "Zuletzt folgst du dem Wege weiter (Richtung Tum Campus - Nicht zum Spielplatz oder Garching abbiegen) bis zu den Boulebahnen. Rechts vom Eingang findest du den nächsten Hinweis zu deinem Schnitzel. Die Pinguine werden euch passieren lassen.",
             "Follow the path to the Tum Campus (Don't use the path to Garching) until you get to the Boulebahnen. The Penguin won`t harm you on your journey"
         ]
     }
