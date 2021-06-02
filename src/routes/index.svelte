@@ -24,6 +24,13 @@
 			console.log('Wrong answer :(');
 		}
 	}
+
+	function changeLanguage(code) {
+		languageCode = code;
+		gtag('event', 'language', {
+			value: languageCode === 0 ? 'deutsch' : 'englisch'
+		});
+	}
 </script>
 
 <div class="indexContainer">
@@ -31,22 +38,8 @@
 		<div class="corner" />
 		<h1 class="title">Schnitzeljagd</h1>
 		<div class="languageSelection corner">
-			<img
-				class="language"
-				src="/deutschland.jpg"
-				alt=""
-				on:click={() => {
-					languageCode = 0;
-				}}
-			/>
-			<img
-				class="language"
-				src="/britanien.png"
-				alt=""
-				on:click={() => {
-					languageCode = 1;
-				}}
-			/>
+			<img class="language" src="/deutschland.jpg" alt="" on:click={changeLanguage(0)} />
+			<img class="language" src="/britanien.png" alt="" on:click={changeLanguage(1)} />
 		</div>
 	</div>
 	<p class="info">
@@ -90,8 +83,7 @@
 	}
 
 	.language {
-		padding-left: 0.25rem;
-		padding-right: 0.25rem;
+		padding: 0.25rem;
 		width: 30px;
 		height: 25px;
 	}
