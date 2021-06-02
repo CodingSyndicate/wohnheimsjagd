@@ -103,6 +103,7 @@
 	.title {
 		width: 70%;
 		text-align: center;
+                font-size: 1.5em;
 	}
 
 	.corner {
