@@ -83,6 +83,13 @@
 		align-items: center;
 	}
 
+	.languageSelection {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.language {
 		padding-left: 0.25rem;
 		padding-right: 0.25rem;
