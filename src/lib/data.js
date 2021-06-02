@@ -2,7 +2,7 @@ export const data = [
     {
         name: "Scheune",
         hint: [
-            "Dem Wege entlang zu deiner Linken befindet sich eine Scheune mit einem gelben Verbotsschild.",
+            "Folge dem Wege entlang zu deiner Linken befindet sich eine Scheune mit einem gelben Verbotsschild.",
             "Follow the path to a barn on your left. On the barn is a yellow proscription sign."
         ],
         question: [
