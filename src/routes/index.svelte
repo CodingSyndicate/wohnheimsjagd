@@ -101,12 +101,12 @@
 	}
 
 	.title {
-		width: 80%;
+		width: 70%;
 		text-align: center;
 	}
 
 	.corner {
-		width: 10%;
+		width: 15%;
 	}
 
 	.stationHint {
