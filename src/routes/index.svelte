@@ -49,7 +49,6 @@
 			/>
 		</div>
 	</div>
-	<!-- pinguine sind toll -->
 	<p class="info">
 		VORSICHT! Ihr begebt euch auf gefährliches Teritorium! Die Wege vor euch werden von der
 		Pinguinguerillia kontrolliert!
