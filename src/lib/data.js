@@ -69,7 +69,7 @@ export const data = [
             "Follow the path to the left and count the pillars on the way"
         ],
         question: [
-            "Pingu ist sehr interessiert am Universum. Damit er für euch bei den Pinguinen bürgt und ihr freies geleit zu eurem Schnitzel bekommen wollt müsst ihr Pingu sagen um welchen Planeten es sich handelt, damit er weis ob es sich lohnt die Woche mal zu diesem Schild zu watscheln.",
+            "Pingu ist sehr interessiert am Universum. Damit er für euch bei den Pinguinen bürgt und ihr freies geleit zu eurem Schnitzel bekommen wollt müsst ihr Pingu sagen um welchen Planeten es sich handelt, damit er weiß ob es sich lohnt die Woche mal zu diesem Schild zu watscheln.",
             "Pingu always wants to learn new things about our Univers. If you want your Schnitzel you have to go to the wooden bridge and tell Pingu what planet is talked about on the sign, so Pingu knows if it is worth to waddle there the next days."
         ],
         answers: [
