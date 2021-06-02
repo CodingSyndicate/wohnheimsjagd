@@ -20,12 +20,12 @@
 		});
 
 		if (answers.includes(answer)) {
-			console.log('Yeah');
+			console.log('Correct answer!');
 			currentStation++;
 			currentAnswer = '';
 		} else {
 			invalid = true;
-			console.log('Wrong!');
+			console.log('Wrong answer :(');
 		}
 	}
 </script>
