@@ -11,24 +11,44 @@
 	let invalid = false;
 
 	function checkAnswer(answers, answer) {
+		gtag('event', 'answer', {
+			event_category: data[currentStation].name,
+			event_label: data[currentStation].name,
+			value: answer
+		});
+
 		if (answers.includes(answer)) {
-			console.log('Yeah');
+			console.log('Correct answer!');
 			currentStation++;
 			currentAnswer = '';
 		} else {
 			invalid = true;
-			console.log('Wrong!');
+			console.log('Wrong answer :(');
 		}
 	}
 </script>
 
 <div class="indexContainer">
 	<div class="titleRow">
-		<div class="corner"></div>
+		<div class="corner" />
 		<h1 class="title">Schnitzeljagd</h1>
 		<div class="languageSelection corner">
-			<img class="language" src="/deutschland.jpg" alt="" on:click={() => {languageCode = 0;}}>
-			<img class="language" src="/britanien.png" alt="" on:click={() => {languageCode = 1;}}>
+			<img
+				class="language"
+				src="/deutschland.jpg"
+				alt=""
+				on:click={() => {
+					languageCode = 0;
+				}}
+			/>
+			<img
+				class="language"
+				src="/britanien.png"
+				alt=""
+				on:click={() => {
+					languageCode = 1;
+				}}
+			/>
 		</div>
 	</div>
 	<!-- pinguine sind toll -->
@@ -45,7 +65,7 @@
 		<p class="stationHint">{station.hint[languageCode]}</p>
 		{#if station.question}
 			<p class="stationQuestion">{station.question[languageCode]}</p>
-			<TextField bind:value={currentAnswer} bind:invalid/>
+			<TextField bind:value={currentAnswer} bind:invalid />
 			<Button on:click={checkAnswer(station.answers, currentAnswer.toLowerCase())} />
 		{:else}
 			Pinguine können nicht fliegen. Dafür sind sie sehr gute Schwimmer und Taucher.
@@ -80,12 +100,12 @@
 	}
 
 	.title {
-		width: 60%;
+		width: 80%;
 		text-align: center;
 	}
 
 	.corner {
-		width: 20%;
+		width: 10%;
 	}
 
 	.stationHint {
